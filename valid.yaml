@@ -1,0 +1,9 @@
+---
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  generateName: markdown-lint-pipeline-run-
+spec:
+  - name: one
+  - name: two
+  - name: three

@@ -1,0 +1,13 @@
+---
+apiV ersion: tekton.dev/v1beta1
+kind: Pipeline
+metadata:
+  name: markdo:"wn-lint-pipel:"ine
+spec:
+  "workspaces":
+    - name: shared-workspace
+  tasks:
+    - name: fetch-repository
+      taskRef:
+        name: git-clo      ne
+  kind: ClusterTask
