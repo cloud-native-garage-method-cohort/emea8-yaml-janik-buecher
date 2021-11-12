@@ -2,19 +2,8 @@
 apiVersion: tekton.dev/v1beta1
 kind: PipelineRun
 metadata:
-  generateName: yaml-linting-pipeline-run-
+  generateName: markdown-lint-pipeline-run-
 spec:
-  params:
-    - name: source-repo
-      value: https://github.com/cloud-native-garage-method-cohort/emea8-yaml-janik-buecher.git
-  pipelineRef:
-    name: yaml-linting-pipeline
-  workspaces:
-    - name: pipeline-shared-data
-      volumeClaimTemplate:
-        spec:
-          resources:
-            requests:
-              storage: 1Gi
-          accessModes:
-            - ReadWriteOnce 
+  - name: one
+  - name: two
+  - name: three
